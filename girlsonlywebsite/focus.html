@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Girls Only - A Girls Only Student Community">
+    <meta name="description" content="Girls Only - Biggest online girls only student community.">
+    <meta property="og:description" content="Join our 24/7 online girls only study space and chat with other students.">
+    <meta property="og:url" content="https://girlsonlydiscord.github.io/">
+    <title>Girls Only - Study With Me</title>
+    <link rel="stylesheet" media="screen and (min-width: 800px)" href="focusstyle.css">
+    <link rel="stylesheet" media="screen and (max-width: 800px)" href="focussplitstyle.css">
+    <script type="text/javascript" src="/focusscript.js"></script>
+    <link rel="icon" type="image/png" href="/favicon.png">
+</head>
+
+<body>
+
+    <div class="bgfr">
+
+        <div class="top">
+            <div class="containerorsum">
+                <div id="topright" class="topright">
+                    <text-quote id="focusquote" class="fade show">
+                        <div class="content"></div>
+                    </text-quote>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="listcontainer">
+            <div class="todoheader">TO-DO LIST</div>
+            <div class="addtaskcontainer">
+                <input type="text" id="new-task" placeholder="Add a new task!" class="taskfield" maxlength="50">
+                <button id="add-task" class="addtask">ADD TASK</button>
+                <div id="custom-notification" class="custom-notification">
+                    <span class="notification-message">You've reached the maximum number of tasks!</span>
+                </div>
+            </div>
+            <ul id="todo-list" class="todo-list">
+                <!--list items will be added here-->
+            </ul>
+            <button id="spotifybutton" class="spotifybutton"><img src="/focusimages/musicnote.png"></button>
+        </div>
+
+        <div class="sidebar" id="sidebar">
+            <div class="toptext">
+                <div class="topmusic">MUSIC</div>
+                <button class="closesidebar"><img src="/focusimages/deleteicon.png"></button>
+            </div>
+            <div class="inputfield">
+                <div class="customplaylisttext">IMPORT CUSTOM PLAYLIST</div>
+                <input type="text" id="new-playlist" placeholder="Paste a playlist URL here!" class="new-playlist">
+                <div class="onlyspotify">Only Spotify is supported at the moment. Sorry!</div>
+                <button id="playlistsave" class="playlistsave">SAVE</button>
+            </div>
+            <iframe style="border-radius:12px; align-self:center;" src="https://open.spotify.com/embed/playlist/5clqcIWc4LAua1EqOojVPc?utm_source=generator" width="352" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
+        <div id="digital-clock" class="digital-clock"></div>
+
+        <div class="general">
+
+            <div class="pomodorocontainer">
+                
+                <div id="pomodoro-timer" class="pomodoro-timer">25:00</div>
+    
+                <div class="clockactions">
+                    <button class="startbutton">START</button>
+    
+                    <button class="redobutton">
+                        <img class="redobuttonimage" src="/focusimages/redoarrow.png">
+                    </button>
+    
+                    <button class="settingsbutton">
+                        <img class="settingsbuttonimage" src="/focusimages/settingsicon.png">
+                    </button>
+                </div>
+    
+                <div class="breakfocus">
+                    <button class="focusbutton">FOCUS</button>
+                    <button class="breakbutton">BREAK</button>
+                </div>
+
+                <div class="clockdiv">
+                    <button class="clockbutton" id="clockbutton">CLOCK MODE</button>
+                </div>
+    
+    
+            </div>
+
+            <div class="rightside">
+                <div class="streakdiv">
+                    <span class="streakemoji">🔥</span>
+                    <span class="streaktext">0</span>
+                </div>
+
+                <div class="screen">
+                    <button id="full-screen" class="fullscreen"><img src="focusimages/fullscreen.png"</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="settingscontainer">
+            <div class="settingstop">
+                <button class="closesettings"><img src="/focusimages/deleteicon.png"></button>
+                <div class="settings">SETTINGS</div>
+            </div>
+
+            <div class="customcon">
+
+                <div class="focustimecustom">
+                    <spanc class="customtext">FOCUS TIME</span>
+                    <input type="number" class="focusfield" id="focusquantity" name="quantity" min="1" max="60" placeholder="25">
+                </div>
+
+                <div class="breaktimecustom">
+                    <span class="customtext">BREAK TIME</span>
+                    <input type="number" class="breakfield" id="breakquantity" name="quantity" min="1" max="60" placeholder="5">
+                </div>
+
+            </div>
+
+            <div class="customimage">
+
+                <div class="customtext bg">
+                    CHOOSE BACKGROUND
+                </div>
+
+                <div class="imagerow">
+                
+                    <button class="image1 imagesbutton" id="image1"><img src="/focusimages/bg1.jpg" class="images"></button>
+                    <button class="image2 imagesbutton" id="image1"><img src="/focusimages/bg2.jpg" class="images"></button>
+                    <button class="image3 imagesbutton" id="image1"><img src="/focusimages/bg3.png" class="images"></button>
+
+                </div>
+
+                <div class="imagerow">
+
+                    <button class="image4 imagesbutton" id="image1"><img src="/focusimages/bg10.jpg" class="images"></button>
+                    <button class="image4 imagesbutton" id="image1"><img src="/focusimages/bg13.jpg" class="images"></button>
+                    <button class="image4 imagesbutton" id="image1"><img src="/focusimages/bg16.png" class="images"></button>
+
+                </div>
+
+                <div class="imagerow">
+
+                    <button class="image4 imagesbutton" id="image1"><img src="/focusimages/bg4.jpg" class="images"></button>
+                    <button class="image4 imagesbutton" id="image1"><img src="/focusimages/bg5.jpg" class="images"></button>
+                    <button class="image4 imagesbutton" id="image1"><img src="/focusimages/bg6.jpg" class="images"></button>
+
+                </div>
+
+                <div class="imagerow">
+
+                    <button class="image4 imagesbutton" id="image1"><img src="/focusimages/bg11.jpg" class="images"></button>
+                    <button class="image4 imagesbutton" id="image1"><img src="/focusimages/bg17.png" class="images"></button>
+                    <button class="image4 imagesbutton" id="image1"><img src="/focusimages/bg19.png" class="images"></button>
+
+                </div>
+
+                <div class="imagerow">
+
+                    <button class="image5 imagesbutton" id="image1"><img src="/focusimages/bg7.jpg" class="images"></button>
+                    <button class="image6 imagesbutton" id="image1"><img src="/focusimages/bg8.png" class="images"></button>
+                    <button class="image6 imagesbutton" id="image1"><img src="/focusimages/bg9.jpg" class="images"></button>
+
+                </div>
+
+                <div class="imagerow">
+
+                    <button class="image4 imagesbutton" id="image1"><img src="/focusimages/bg12.jpg" class="images"></button>
+                    <button class="image4 imagesbutton" id="image1"><img src="/focusimages/bg18.png" class="images"></button>
+                    <button class="image4 imagesbutton" id="image1"><img src="/focusimages/bg20.png" class="images"></button>
+
+                </div>
+
+            </div>
+
+            <input type="file" id="upload-background" accept="image/*" style="display: none;">
+            <button id="upload" class="save">UPLOAD YOUR OWN BACKGROUND</button>
+            
+            <button id="save" class="save real">SAVE</button>
+            
+        </div>
+
+    </div>
+
+</body>
